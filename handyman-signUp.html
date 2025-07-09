@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width", initialscale="1.0">
+    <meta name="description" content="Sign up page for HandyApp, where users can create an account to access services.">
+    <link rel="stylesheet" type="text/css" href="handyapp-signIn.css">
+    <title>HandyApp SignUp Page</title>
+</head>
+<body>
+    <section class="logo">
+        <img src="images/Logo.png" alt="HandyApp Logo" class="logoImage">
+    </section>
+    <header>
+        <h1>Sign Up Page</h1>
+    </header>
+
+    <main>
+        <div class="formContainment">
+                <h2>Create your account</h2>
+                <form action="handyapp-signIn.html" method="post">
+                    <fieldset>
+                        <legend>Sign Up Form</legend>
+                        <label for="fullname"></label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Full name" required>
+                        
+                        <label for="phone"></label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                        
+                        <label for="email"></label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        
+                        <label for="Password"></label><br>
+                        <input type="password" id="Password" name="Password" placeholder="Password" required>
+                    </fieldset>
+                        <br> <br>
+                        <input type="Submit" value="Register">
+                        <p class="alt-signin">Or sign up with:</p>
+                    <div class="social-signup">
+                        <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Sign up with Facebook"></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=d367f2a0a2a8996b032088a1416558c013b631890cd354b8e50000ed4827a90eJmltdHM9MTc1MTUwMDgwMA&ptn=3&ver=2&hsh=4&fclid=3fa16cb9-a16b-60a6-2af0-7954a0796135&psq=google+sign+in&u=a1aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0xvZ2lu&ntb=1"><img src="images/Google.png" alt="Sign up with Google"></a>
+                    </div>
+                    <p class="login-link">Already have an account? <a href="handyapp-signIn.html">Sign In</a></p>
+                </form>
+        </div>
+    </main>
+</body>
+</html>
