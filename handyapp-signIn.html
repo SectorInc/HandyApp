@@ -1,15 +1,16 @@
 <!DOCTYPE html>
    <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="handyapp.css">
+        <meta name="viewport" content="width", initialscale="1.0">
+        <link rel="stylesheet" type="text/css" href="handyapp-signIn.css">
         <meta charset="utf8">
         <title> HandyApp SignIn page</title>
     </head>
     <body>
-        <section class="logo">
-            <img src="img/Logo.png" alt="HAndyApp Logo" class="logoImage">
-        </section>
-            <header>
+         <section class="logo">
+        <img src="images/Logo.png" alt="HandyApp Logo" class="logoImage">
+    </section>  
+    <header>
                 <h1>Sign In Page</h1>
             </header>
         <main>
@@ -17,16 +18,19 @@
                 <h2>Welcome Back</h2>
                 <p>Please enter your details to sign in</p>
                 <form action="recap.html" method="post">
+                    <fieldset>    
                         <label for="Username_or_email"></label><br>
-                        <input type="text" id="Username_or_email" name="Username_or_email" placeholder="enter username or email" required>
-                        <br> <br>
+                        <input type="text" id="Username_or_email" name="Username_or_email" placeholder="Username or email" required>
+                        
                         <label for="Password"></label><br>
                         <input type="password" id="Password" name="Password" placeholder="Password" required>
-                        <br> <br>
+                    </fieldset>
+
                         <input type="Submit" value="Sign In">
+                   
                     <div class="Links">
                         <br><p>Forgotten Password? <a href="#">Click Here</a></p>
-                        <p>Don't have an account? <a href="#">Sign Up</a> </p> 
+                        <p class="Sign Up Link">Don't have an account? <a href="handyman-signUp.html">Sign Up</a> </p> 
                     </div>
                 </form>
             </div>
