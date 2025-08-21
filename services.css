@@ -9,7 +9,7 @@ header{
     text-align: center;
     top: 0px;
     left: 0px;
-    position: fixed;
+    position: sticky;
     margin: 0;
     padding: 1px;
     width: 100%;
@@ -17,27 +17,27 @@ header{
     font-size: x-small;
 }
 
-.services-grid {
-    /* grid */
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap: 50px;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
+
+.services-grid{
+    margin:  auto;
+    display: grid;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;
+
 }
 
 .service-card{
     background-color: #f9f9f9;
-    border-radius: 50px;
+     border-radius: 10px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+   width: 80%;
+    max-width: 900px;
+    margin: 10px;
 }
+
 .service-card:hover{
     transform: translateY(-5px);
     background-color: #c9cbd2;
@@ -48,7 +48,7 @@ header{
     margin-bottom: 15px;
     border-radius:47%;
 }
-.services-card h3{
+.service-card h3{
     font-size: 18px;
     color: #333;
 }
