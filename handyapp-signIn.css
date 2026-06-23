@@ -1,21 +1,25 @@
-body, head, p, h1{
+body, p, h1 {
     margin: 0;
     padding: 0;
     font-family: cursive;
 }
-.logo{
+
+
+.logo {
     position: relative;
 }
-.logo img{
+
+.logo img {
     width: 100px;
     height: auto;
     display: block;
     margin: 20px auto;
 }
-header{
+
+header {
     background-color: rgb(126, 146, 211);
     color: aliceblue;
-    padding: auto;
+    padding: 10px;   
     text-align: center;
     z-index: 1;
     width: 100%;
@@ -23,36 +27,79 @@ header{
     left: 0;
     position: sticky;
 }
-.formContainer{
+
+.formContainer {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
 }
-.formContainer h2{
+
+.formContainer h2 {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.formContainer p {
+    text-align: center;
+    color: rgb(100, 100, 100);
     margin-bottom: 20px;
 }
 
-form input{
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+form input[type="text"],
+form input[type="password"] {
     font-size: 16px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin-bottom: 15px;
+    border-radius: 4px;
 }
 
-input[type="Submit"]{
-    margin-top: 20px;
-    background-color:  rgb(126, 146, 211);    color: white;
-    width: 50%;
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    background-color: rgb(126, 146, 211);
+    color: white;
+    width: 60%;
     font-size: 16px;
-   cursor:pointer;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(24, 35, 72);
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.links a {
+    color: rgb(126, 146, 211);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
-    .formContainment {
+    .formContainer {   
         margin: 10px;
         padding: 15px;
     }
