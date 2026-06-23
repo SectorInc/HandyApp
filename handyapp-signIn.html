@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-   <html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width", initialscale="1.0">
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta name="description" content="Sign in to your HandyApp account.">
         <link rel="stylesheet" type="text/css" href="handyapp-signIn.css">
-        <meta charset="utf8">
-        <title> HandyApp SignIn page</title>
+        <title>HandyApp – Sign In</title>
     </head>
     <body>
-         <section class="logo">
-        <img src="IMG/Logo.png" alt="HandyApp Logo" class="logoImage">
-    </section>  
-    <header>
-                <h1>Sign In Page</h1>
-            </header>
+        <section class="logo">
+            <img src="IMG/Logo.png" alt="HandyApp Logo" class="logoImage">
+        </section>
+        <header>
+            <h1>Sign In</h1>
+        </header>
         <main>
             <div class="formContainer">
                 <h2>Welcome Back</h2>
                 <p>Please enter your details to sign in</p>
-                <form action="recap.html" method="post">
-                    <fieldset>    
-                        <label for="Username_or_email"></label><br>
-                        <input type="text" id="Username_or_email" name="Username_or_email" placeholder="Username or email" required>
-                        
-                        <label for="Password"></label><br>
-                        <input type="password" id="Password" name="Password" placeholder="Password" required>
+                <form action="recap.html" method="get">
+                    <fieldset>
+                      
+                        <label for="username_or_email">Username or email</label>
+                        <input type="text" id="username_or_email" name="username_or_email"
+                               placeholder="Username or email" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"
+                               placeholder="Password" required>
                     </fieldset>
 
-                        <input type="Submit" value="Sign In">
-                   
-                    <div class="Links">
-                        <br><p>Forgotten Password? <a href="#">Click Here</a></p>
-                        <p class="Sign Up Link">Don't have an account? <a href="handyman-signUp.html">Sign Up</a> </p> 
+                    <input type="submit" value="Sign In">
+
+                    <div class="links">
+                        <p>Forgotten password? <a href="#">Click here</a></p>
+                        <p>Don't have an account? <a href="handyman-signUp.html">Sign Up</a></p>
                     </div>
                 </form>
             </div>
         </main>
+        <footer>
+            <p class="copyright">Copyright &copy; 2025 SectorNG INC</p>
+         </footer>
     </body>
-   </html>
+</html>
