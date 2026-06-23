@@ -1,11 +1,13 @@
-body, ul,li, h1,h2, a{
+body, ul, li, h1, h2, a {
     margin: 0;
     padding: 0;
-    font-family: cursive;}
+    font-family: cursive;
+}
 
-    .logo{
-        position: relative;
-    }
+.logo {
+    position: relative;
+}
+
 .logo img {
     width: 100px;
     height: auto;
@@ -13,68 +15,131 @@ body, ul,li, h1,h2, a{
     margin: 20px auto;
 }
 
-header{
+header {
     background-color: rgb(126, 146, 211);
     color: aliceblue;
-    padding: 1px;
+    padding: 10px;
     text-align: center;
     z-index: 1;
     width: 100%;
     top: 0;
-   left: 0;
-   position: sticky;
-   
+    left: 0;
+    position: sticky;
 }
 
-/*.formContainment{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 50px auto;
-}*/
-
-
-.formContainment{
-
-    max-width: 400px;
-    margin: 50px auto;
+.formContainment {
+    max-width: 420px;
+    margin: 40px auto 60px;
     padding: 30px;
     border-radius: 10px;
-    }
-
-    .formContainment h2{
-    text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
 }
 
-form input{
+.formContainment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(24, 35, 72);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="password"] {
     font-size: 16px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 15px;
 }
 
-input[type="Submit"]{
-    margin-top: 20px;
-    background-color:  rgb(126, 146, 211);    color: white;
-    width: 50%;
-    font-size: 16px;
-    cursor:pointer;
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: rgb(126, 146, 211);
+    outline: none;
 }
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 10px;
+    background-color: rgb(126, 146, 211);
+    color: white;
+    width: 70%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(24, 35, 72);
+}
+
+.alt-signin {
+    text-align: center;
+    margin: 20px 0 10px;
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+}
+
+.social-signup {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
 .social-signup a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease;
+}
+
+.social-signup a img:hover {
+    transform: scale(1.1);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+}
+
+.login-link a {
+    color: rgb(126, 146, 211);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
     .formContainment {
         margin: 10px;
         padding: 15px;
+        box-shadow: none;
     }
 }
